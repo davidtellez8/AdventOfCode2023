@@ -10,15 +10,15 @@ def calculateFinalValue(arrayLines):
 
 
 def getArrayEntriesFromFile():
-    arrayOfEntries = []
+    entries = []
 
     file = open('input.txt', 'r')
     lines = file.readlines()
     
     for line in lines:
-        arrayOfEntries.append(line.strip())
+        entries.append(line.strip())
 
-    return arrayOfEntries
+    return entries
 
 
 def calculateCalibrationValue(lineValue):
